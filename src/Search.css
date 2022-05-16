@@ -1,0 +1,154 @@
+.background {
+  background: url('./img/bg.png');
+  padding: 33px 0px 128px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  color: white;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 30px;
+  letter-spacing: -0.285714px;
+}
+
+.input-container {
+  width: 555px;
+  max-width: 90%;
+  height: 58px;
+  display: flex;
+  justify-content: space-between;
+  background: #ffffff;
+  box-shadow: 0px 50px 50px -25px rgba(0, 0, 0, 0.0983665);
+  border-radius: 15px;
+}
+
+input {
+  height: 58px;
+  max-width: 497px;
+  width: 82%;
+  padding: 18px 0 18px 24px;
+  background: #ffffff;
+  box-shadow: 0px 50px 50px -25px rgba(0, 0, 0, 0.0983665);
+  border-radius: 15px;
+  border: none;
+  outline: none;
+}
+
+button {
+  border: none;
+  background: black;
+  border-radius: 0px 15px 15px 0;
+  width: 58px;
+  cursor: pointer;
+}
+
+.result {
+  width: 1110px;
+  max-width: 90%;
+  display: flex;
+  /* justify-content: space-evenly; */
+  background: #ffffff;
+  box-shadow: 0px 50px 50px -25px rgba(0, 0, 0, 0.0983665);
+  border-radius: 15px;
+  padding: 37px 32px;
+  margin: 0 auto;
+  transform: translateY(-50%);
+  z-index: 3;
+  position: relative;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  color: #2c2c2c;
+  opacity: 0.5;
+  padding-bottom: 13px;
+}
+
+p {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: -0.232143px;
+  color: #2c2c2c;
+}
+
+.col {
+  border-right: 1px solid rgba(0, 0, 0, 0.15);
+  padding-right: 32px;
+  padding-left: 32px;
+  width: 276px;
+  height: 87px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.col:last-of-type {
+  border-right: none;
+}
+
+.col:first-of-type {
+  padding-left: 0;
+}
+
+.map {
+  transform: translateY(-18.5%);
+}
+@media (max-width: 1023px) {
+  h3 {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .col {
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 70px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .background {
+    height: 300px;
+  }
+  .result {
+    flex-direction: column;
+    padding: 24px;
+    transform: translateY(-40%);
+  }
+
+  .col {
+    border: none;
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+    height: 43px;
+    margin-bottom: 24px;
+  }
+  .col:last-of-type {
+    margin-bottom: 0;
+  }
+  h3 {
+    padding-bottom: 7px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
